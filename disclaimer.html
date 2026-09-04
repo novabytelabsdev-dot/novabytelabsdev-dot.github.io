@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Disclaimer — NovaByte Labs</title>
+
+  <meta
+    name="description"
+    content="Disclaimer for NovaByte Labs applications, including APXAM Andhra Groups Exam Prep."
+  >
+
+  <meta name="theme-color" content="#06101d">
+
+  <style>
+    :root {
+      --bg: #06101d;
+      --bg2: #0a1626;
+      --card: rgba(255,255,255,.055);
+      --border: rgba(255,255,255,.10);
+      --text: #f7faff;
+      --muted: #a8b5c9;
+      --blue: #2f80ff;
+      --cyan: #5ee7ff;
+      --max: 900px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Arial,
+        sans-serif;
+
+      color: var(--text);
+
+      background:
+        radial-gradient(
+          circle at 85% 5%,
+          rgba(47,128,255,.18),
+          transparent 30%
+        ),
+        linear-gradient(
+          180deg,
+          var(--bg),
+          #050b14
+        );
+
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(calc(100% - 32px), var(--max));
+      margin: auto;
+    }
+
+    /* NAVIGATION */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+
+      background: rgba(6,16,29,.82);
+      backdrop-filter: blur(18px);
+
+      border-bottom:
+        1px solid rgba(255,255,255,.07);
+    }
+
+    .nav {
+      height: 70px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+
+      font-size: 19px;
+      font-weight: 800;
+    }
+
+    .brand-icon {
+      width: 39px;
+      height: 39px;
+
+      display: grid;
+      place-items: center;
+
+      border-radius: 12px;
+
+      background:
+        linear-gradient(
+          145deg,
+          var(--blue),
+          var(--cyan)
+        );
+
+      color: #04101d;
+      font-weight: 900;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+
+    nav a {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: white;
+    }
+
+    .nav-button {
+      padding: 8px 14px;
+
+      border-radius: 10px;
+
+      background:
+        rgba(47,128,255,.12);
+
+      border:
+        1px solid rgba(47,128,255,.30);
+
+      color: white;
+    }
+
+    /* PAGE HEADER */
+
+    .page-header {
+      padding: 90px 0 55px;
+      text-align: center;
+    }
+
+    .badge {
+      display: inline-block;
+
+      padding: 7px 13px;
+
+      border-radius: 999px;
+
+      background:
+        rgba(47,128,255,.10);
+
+      border:
+        1px solid rgba(47,128,255,.22);
+
+      color: #bcd9ff;
+
+      font-size: 12px;
+      font-weight: 700;
+
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size:
+        clamp(38px, 6vw, 58px);
+
+      line-height: 1.05;
+      letter-spacing: -2.5px;
+
+      margin-bottom: 15px;
+    }
+
+    .page-header p {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    /* CONTENT */
+
+    main {
+      padding-bottom: 80px;
+    }
+
+    .content {
+      padding: 38px;
+
+      border-radius: 24px;
+
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255,255,255,.06),
+          rgba(255,255,255,.025)
+        );
+
+      border:
+        1px solid var(--border);
+    }
+
+    .effective {
+      padding: 15px 18px;
+      margin-bottom: 35px;
+
+      border-radius: 13px;
+
+      background:
+        rgba(47,128,255,.07);
+
+      border:
+        1px solid rgba(47,128,255,.14);
+
+      color: #b9c8dc;
+
+      font-size: 13px;
+    }
+
+    .content section {
+      padding: 0;
+      margin-bottom: 36px;
+    }
+
+    .content section:last-child {
+      margin-bottom: 0;
+    }
+
+    .content h2 {
+      font-size: 23px;
+
+      line-height: 1.25;
+      letter-spacing: -.5px;
+
+      margin-bottom: 12px;
+    }
+
+    .content p {
+      color: var(--muted);
+
+      font-size: 14px;
+
+      margin-bottom: 12px;
+    }
+
+    .content ul {
+      padding-left: 22px;
+
+      color: var(--muted);
+
+      font-size: 14px;
+    }
+
+    .content li {
+      margin-bottom: 8px;
+    }
+
+    .content strong {
+      color: #e9f0fb;
+    }
+
+    .highlight {
+      padding: 24px;
+
+      margin: 18px 0;
+
+      border-radius: 17px;
+
+      background:
+        rgba(94,231,255,.055);
+
+      border:
+        1px solid rgba(94,231,255,.15);
+    }
+
+    .highlight p {
+      margin-bottom: 0;
+    }
+
+    .contact-card {
+      margin-top: 25px;
+
+      padding: 25px;
+
+      border-radius: 18px;
+
+      background:
+        rgba(255,255,255,.04);
+
+      border:
+        1px solid var(--border);
+    }
+
+    .contact-card strong {
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    .contact-card a {
+      color: #82c8ff;
+    }
+
+    /* FOOTER */
+
+    footer {
+      padding: 35px 0;
+
+      border-top:
+        1px solid rgba(255,255,255,.08);
+
+      color: var(--muted);
+
+      font-size: 13px;
+    }
+
+    .footer-row {
+      display: flex;
+
+      align-items: center;
+
+      justify-content: space-between;
+
+      gap: 20px;
+    }
+
+    .footer-links {
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 18px;
+    }
+
+    .footer-links a:hover {
+      color: white;
+    }
+
+    .copyright {
+      margin-top: 18px;
+
+      color: #707d91;
+
+      font-size: 12px;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 760px) {
+
+      .container {
+        width:
+          min(
+            calc(100% - 26px),
+            var(--max)
+          );
+      }
+
+      nav {
+        display: none;
+      }
+
+      .page-header {
+        padding: 65px 0 40px;
+      }
+
+      .content {
+        padding: 25px 20px;
+      }
+
+      .content h2 {
+        font-size: 21px;
+      }
+
+      .footer-row {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+
+
+<body>
+
+
+<header>
+
+  <div class="container nav">
+
+    <a href="index.html" class="brand">
+
+      <span class="brand-icon">
+        N
+      </span>
+
+      <span>
+        NovaByte Labs
+      </span>
+
+    </a>
+
+
+    <nav>
+
+      <a href="index.html">
+        Home
+      </a>
+
+      <a href="index.html#apps">
+        Apps
+      </a>
+
+      <a href="privacy.html">
+        Privacy
+      </a>
+
+      <a
+        href="disclaimer.html"
+        class="nav-button"
+      >
+        Disclaimer
+      </a>
+
+    </nav>
+
+  </div>
+
+</header>
+
+
+<section class="page-header">
+
+  <div class="container">
+
+    <div class="badge">
+      IMPORTANT INFORMATION
+    </div>
+
+    <h1>
+      Disclaimer
+    </h1>
+
+    <p>
+      NovaByte Labs applications
+    </p>
+
+  </div>
+
+</section>
+
+
+<main>
+
+  <div class="container">
+
+    <article class="content">
+
+
+      <div class="effective">
+
+        <strong>
+          Effective date:
+        </strong>
+
+        September 4, 2026
+
+      </div>
+
+
+      <!-- 1 -->
+
+      <section>
+
+        <h2>
+          1. General Disclaimer
+        </h2>
+
+        <p>
+          The applications and digital products developed by
+          NovaByte Labs are provided for general informational,
+          educational, and productivity purposes, depending on
+          the purpose of the individual application.
+        </p>
+
+        <p>
+          Information and features provided through our
+          applications may be updated, changed, or removed
+          from time to time.
+        </p>
+
+      </section>
+
+
+      <!-- 2 -->
+
+      <section>
+
+        <h2>
+          2. APXAM Is an Independent Application
+        </h2>
+
+        <div class="highlight">
+
+          <p>
+
+            <strong>
+              APXAM Andhra Groups Exam Prep is an independent
+              educational application developed and maintained
+              by NovaByte Labs.
+            </strong>
+
+          </p>
+
+        </div>
+
+        <p>
+          APXAM is not affiliated with, endorsed by, sponsored by,
+          or officially connected with the Andhra Pradesh Public
+          Service Commission (APPSC) or the Government of
+          Andhra Pradesh.
+        </p>
+
+        <p>
+          The name of an examination, organization, department,
+          examination category, or other public institution may
+          be referenced where necessary to describe the educational
+          purpose or subject matter of the application. Such
+          references do not imply an official relationship,
+          endorsement, authorization, or partnership.
+        </p>
+
+      </section>
+
+
+      <!-- 3 -->
+
+      <section>
+
+        <h2>
+          3. Official Information
+        </h2>
+
+        <p>
+          APXAM is intended as an educational preparation tool
+          and should not be treated as an official source of
+          government or examination information.
+        </p>
+
+        <p>
+          Users should always verify important information,
+          including:
+        </p>
+
+        <ul>
+
+          <li>
+            Examination notifications
+          </li>
+
+          <li>
+            Examination schedules
+          </li>
+
+          <li>
+            Eligibility requirements
+          </li>
+
+          <li>
+            Application deadlines
+          </li>
+
+          <li>
+            Examination rules and procedures
+          </li>
+
+          <li>
+            Results and official announcements
+          </li>
+
+        </ul>
+
+        <p>
+          through the relevant official government or APPSC
+          channels.
+        </p>
+
+      </section>
+
+
+      <!-- 4 -->
+
+      <section>
+
+        <h2>
+          4. Educational Content
+        </h2>
+
+        <p>
+          Educational material available through APXAM is
+          provided for study and preparation purposes.
+        </p>
+
+        <p>
+          We make reasonable efforts to provide useful and
+          relevant educational content, but we do not guarantee
+          that every item is complete, current, error-free, or
+          identical to any particular examination.
+        </p>
+
+        <p>
+          Users are responsible for independently verifying
+          information where accuracy or currency is important.
+        </p>
+
+      </section>
+
+
+      <!-- 5 -->
+
+      <section>
+
+        <h2>
+          5. Examination Outcomes
+        </h2>
+
+        <p>
+          Use of APXAM does not guarantee selection, qualification,
+          examination success, employment, rank, marks, or any
+          particular examination outcome.
+        </p>
+
+        <p>
+          Individual results depend on many factors, including
+          preparation, performance, examination conditions,
+          eligibility, and applicable examination rules.
+        </p>
+
+      </section>
+
+
+      <!-- 6 -->
+
+      <section>
+
+        <h2>
+          6. Third-Party Services and Links
+        </h2>
+
+        <p>
+          Applications developed by NovaByte Labs may use
+          third-party services such as Google Firebase,
+          Google Mobile Ads, and Google Play services.
+        </p>
+
+        <p>
+          Applications or websites may also contain links to
+          external websites or services.
+        </p>
+
+        <p>
+          NovaByte Labs does not control third-party websites
+          or services and is not responsible for their content,
+          availability, policies, or practices.
+        </p>
+
+      </section>
+
+
+      <!-- 7 -->
+
+      <section>
+
+        <h2>
+          7. Advertising
+        </h2>
+
+        <p>
+          Some NovaByte Labs applications may display
+          advertisements provided by third-party advertising
+          services.
+        </p>
+
+        <p>
+          Advertisements are provided by the applicable
+          advertising platform and may vary according to
+          factors such as application, region, device, and
+          advertising settings.
+        </p>
+
+      </section>
+
+
+      <!-- 8 -->
+
+      <section>
+
+        <h2>
+          8. Premium Features and Purchases
+        </h2>
+
+        <p>
+          Certain applications may provide optional premium
+          features or subscriptions through Google Play.
+        </p>
+
+        <p>
+          Pricing, billing frequency, renewal terms, and other
+          purchase conditions are presented through the
+          applicable Google Play billing interface before
+          purchase.
+        </p>
+
+        <p>
+          Purchases and subscriptions are subject to the
+          applicable Google Play terms and policies.
+        </p>
+
+      </section>
+
+
+      <!-- 9 -->
+
+      <section>
+
+        <h2>
+          9. Availability and Changes
+        </h2>
+
+        <p>
+          NovaByte Labs may modify, update, suspend, or
+          discontinue application features or services at
+          any time where reasonably necessary.
+        </p>
+
+        <p>
+          We do not guarantee that an application or any
+          particular feature will always be available,
+          uninterrupted, or free from errors.
+        </p>
+
+      </section>
+
+
+      <!-- 10 -->
+
+      <section>
+
+        <h2>
+          10. Limitation of Responsibility
+        </h2>
+
+        <p>
+          To the extent permitted by applicable law, NovaByte
+          Labs is not responsible for losses or consequences
+          arising from reliance on educational content,
+          application availability, third-party services,
+          examination information, or examination outcomes.
+        </p>
+
+        <p>
+          Nothing in this disclaimer is intended to exclude
+          or limit any rights or protections that cannot
+          legally be excluded or limited under applicable law.
+        </p>
+
+      </section>
+
+
+      <!-- 11 -->
+
+      <section>
+
+        <h2>
+          11. Changes to This Disclaimer
+        </h2>
+
+        <p>
+          This Disclaimer may be updated from time to time
+          to reflect changes to our applications, services,
+          or applicable requirements.
+        </p>
+
+        <p>
+          The updated version will be published on this page
+          with a revised effective date.
+        </p>
+
+      </section>
+
+
+      <!-- 12 -->
+
+      <section>
+
+        <h2>
+          12. Contact
+        </h2>
+
+        <p>
+          If you have questions about this Disclaimer or an
+          application developed by NovaByte Labs, please
+          contact us.
+        </p>
+
+
+        <div class="contact-card">
+
+          <strong>
+            NovaByte Labs
+          </strong>
+
+          <strong>
+            APXAM Support
+          </strong>
+
+          <a href="mailto:apxam.team@gmail.com">
+            apxam.team@gmail.com
+          </a>
+
+        </div>
+
+      </section>
+
+
+    </article>
+
+  </div>
+
+</main>
+
+
+<footer>
+
+  <div class="container">
+
+    <div class="footer-row">
+
+      <div>
+
+        <strong>
+          NovaByte Labs
+        </strong>
+
+        <br>
+
+        Independent software development.
+
+      </div>
+
+
+      <div class="footer-links">
+
+        <a href="index.html">
+          Home
+        </a>
+
+        <a href="index.html#apps">
+          Apps
+        </a>
+
+        <a href="privacy.html">
+          Privacy
+        </a>
+
+        <a href="mailto:apxam.team@gmail.com">
+          Contact
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+      © 2026 NovaByte Labs. All rights reserved.
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+</body>
+</html>
